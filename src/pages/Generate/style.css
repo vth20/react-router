@@ -1,0 +1,6 @@
+.envelope-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 4px;
+  /* Adjust the gap and minmax values as needed */
+}

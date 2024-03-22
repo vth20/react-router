@@ -1,6 +1,6 @@
 import { Modal } from "antd";
 import axios from "axios";
-
+import localStorageUtil from "../utils/localStorage";
 const API_BASE_URL = process.env.REACT_APP_USER_URL_API;
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -8,6 +8,11 @@ const api = axios.create({
 
 api.interceptors.request.use(
   (config) => {
+    const token = localStorageUtil.getItem("access_token");
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+
     return config;
   },
   (error) => {

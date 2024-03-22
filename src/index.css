@@ -1,3 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.envelope-info-receive:hover {
+  transform: rotate(5deg); /* Adjust the rotation angle as needed */
+  animation: shake 0.5s ease-in-out 3;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25%, 75% {
+    transform: rotate(-5deg); /* Adjust the translation distance as needed */
+  }
+  50% {
+    transform: rotate(5deg); /* Adjust the translation distance as needed */
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

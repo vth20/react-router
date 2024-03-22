@@ -1,0 +1,9 @@
+.wrapper-result {
+  position: relative;
+}
+
+.result {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+.envelope-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 4px;
+  /* Adjust the gap and minmax values as needed */
+}
+.modal-show-receive {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.close-button {
+  position: fixed;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}

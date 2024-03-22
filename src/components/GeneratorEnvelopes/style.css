@@ -1,0 +1,15 @@
+/* LixiGenerator.css */
+
+.lixigenerator-container {
+  padding: 20px;
+}
+
+.input-field {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.submit-button {
+  width: 100%;
+	background-color: #4096ff;
+}
